@@ -42,5 +42,9 @@ namespace DemoRest1.Services
         {
             throw new System.Exception("Algo ruim aconteceu");
         }
+        public void Cadastrar(ConsultaCep novoCep)
+        {
+            _dados.TryAdd(novoCep.Cep, novoCep);
+        }
     }
 }
